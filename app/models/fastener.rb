@@ -1,0 +1,2 @@
+class Fastener < ApplicationRecord
+end

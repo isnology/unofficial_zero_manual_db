@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Year:</strong>
+  <%= @fastener.year %>
+</p>
+
+<p>
+  <strong>Model:</strong>
+  <%= @fastener.model %>
+</p>
+
+<p>
+  <strong>Location:</strong>
+  <%= @fastener.location %>
+</p>
+
+<p>
+  <strong>Fastener:</strong>
+  <%= @fastener.fastener %>
+</p>
+
+<p>
+  <strong>Specification:</strong>
+  <%= @fastener.specification %>
+</p>
+
+<p>
+  <strong>Citation:</strong>
+  <%= @fastener.citation %>
+</p>
+
+<%= link_to 'Edit', edit_fastener_path(@fastener) %> |
+<%= link_to 'Back', fasteners_path %>
