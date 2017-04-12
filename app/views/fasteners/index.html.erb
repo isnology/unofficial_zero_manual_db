@@ -1,32 +1,32 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Fasteners</h1>
+<h1>Fastener Specifications</h1>
 
 <table>
   <thead>
     <tr>
-      <th>Year</th>
-      <th>Model</th>
-      <th>Location</th>
-      <th>Fastener</th>
-      <th>Specification</th>
-      <th>Citation</th>
-      <th colspan="3"></th>
+      <th class="col1">Year</th>
+      <th class="col2">Model</th>
+      <th class="col3">Location</th>
+      <th class="col4">Fastener</th>
+      <th class="col5">Specification</th>
+      <th class="col6">Citation</th>
+      <th colspan="3" class="col7">Actions</th>
     </tr>
   </thead>
 
   <tbody>
     <% @fasteners.each do |fastener| %>
       <tr>
-        <td><%= fastener.year %></td>
-        <td><%= fastener.model %></td>
-        <td><%= fastener.location %></td>
-        <td><%= fastener.fastener %></td>
-        <td><%= fastener.specification %></td>
-        <td><%= fastener.citation %></td>
-        <td><%= link_to 'Show', fastener %></td>
-        <td><%= link_to 'Edit', edit_fastener_path(fastener) %></td>
-        <td><%= link_to 'Destroy', fastener, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td class="cell"><%= fastener.year %></td>
+        <td class="cell"><%= fastener.model %></td>
+        <td class="cell"><%= fastener.location %></td>
+        <td class="cell"><%= fastener.fastener %></td>
+        <td class="cell"><%= fastener.specification %></td>
+        <td class="cell"><%= fastener.citation %></td>
+        <td><%= link_to 'Show', fastener, class: 'button w5' %></td>
+        <td><%= link_to 'Edit', edit_fastener_path(fastener), class: 'button w5' %></td>
+        <td><%= link_to 'Destroy', fastener, method: :delete, data: { confirm: 'Are you sure?' }, class: 'button w5' %></td>
       </tr>
     <% end %>
   </tbody>
@@ -34,4 +34,4 @@
 
 <br>
 
-<%= link_to 'New Fastener', new_fastener_path %>
+<%= link_to 'New Fastener', new_fastener_path, class: 'button w10' %>

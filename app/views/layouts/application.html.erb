@@ -6,23 +6,22 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= render 'layouts/shim' %>
   </head>
 
   <body>
     <header>
 
     </header>
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <% flash.each do |key, message| %>
-            <div class="text-center alert alert-<%= key == 'notice' ? 'success' : 'danger' %>">
-              <%= message %>
-            </div>
-          <% end %>
-          <%= yield %>
-        </div>
+    <div class="main-body">
+      <div class="flash">
+        <% flash.each do |key, message| %>
+          <%= content_tag(:div, message, class: "alert alert-#{key}") %>
+        <% end %>
       </div>
+      <%= yield %>
+      <%= render 'layouts/footer' %>
+      <%= debug(params) if Rails.env.development? %>
     </div>
   </body>
 </html>

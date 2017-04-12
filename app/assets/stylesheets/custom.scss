@@ -2,7 +2,202 @@
 @import 'bootstrap';
 
 body {
-  padding-top: 80px;
-  background: #e1e1e1;
-  color: #64103F;
+  padding-top: 2px;
+  background: #2a2a2a;
+  color: lightgray;
+
+  font-family: verdana, arial, helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 18px;
 }
+
+header-x {
+  float: left;
+  background-color: #ddf2ff;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-top: -10px;
+  margin-bottom: 1em;
+  border-bottom: 3px solid blue;
+  width: 100%;
+
+  h1 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+  }
+
+  .dropdown {
+    float: right;
+
+    ul {
+      margin-top: -1em;
+      margin-bottom: 0px;
+      margin-right: 10px;
+    }
+
+    li {
+      list-style-type: none;
+    }
+  }
+}
+
+.main-body {
+  padding-top: 2em;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.flash {
+  diaplay: block;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7px;
+  padding-top: 10px;
+
+  .alert {
+    padding-bottom: 15px;
+    padding-left: 2em;
+    font-size: 15px;
+    border-radius: 7px;
+    border: 1px solid;
+  }
+
+  .alert-warning {
+    color: #ad8d0c;
+    background-color: #fdffdb;
+    border-color: #fdffdb;
+  }
+
+  .alert-danger {
+    color: #7a1004;
+    background-color: #ffb0aa;
+    border-color: #ffb0aa;
+  }
+
+  .alert-success {
+    color: green;
+    background-color: #c9fcd7;
+    border-color: #c9fcd7;
+  }
+
+  .alert-info, .alert-notice, .alert-alert {
+    color: blue;
+    background-color: #d3eaff;
+    border-color: #d3eaff;
+  }
+}
+
+button, input[type="submit"], input[type="button"] {
+  border: 3px lightgray outset;
+  background-color: #bfbfbf;
+  text-align: center;
+}
+
+.button {
+  display: block;
+  text-decoration: none;
+  border: 3px lightgray outset;
+  background-color: #bfbfbf;
+  color: black;
+  text-align: center;
+  font-size: small;
+  padding-top: 0px;
+  padding-bottom: 2px;
+}
+
+.button:active, button:active, input[type="submit"]:active, input[type="button"]:active {
+  border: 3px lightgray inset;
+}
+
+#notice {
+  color: green;
+}
+
+input[type="text"]:invalid, input[type="password"]:invalid, input[action="text"]:invalid, input[type="email"]:invalid, textarea:invalid {
+  color: white;
+  background-color: red;
+}
+
+:required {
+  border: 1px solid red;
+}
+
+.field_with_errors input {
+  //color: white;
+  //padding: 2px;
+  //background-color: red;
+  //display: table;
+  border: 2px solid red;
+}
+
+#error_explanation {
+  width: 450px;
+  border: 2px solid red;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #f0f0f0;
+  h2 {
+    text-align: left;
+    font-weight: bold;
+    padding: 5px 5px 5px 15px;
+    font-size: 12px;
+    margin: -7px;
+    margin-bottom: 0px;
+    background-color: #c00;
+    color: #fff;
+  }
+  ul li {
+    font-size: 12px;
+    list-style: square;
+  }
+}
+
+.w5 {
+  width: 5em;
+}
+
+.w10 {
+  width: 10em;
+}
+
+.w15 {
+  width: 15em;
+}
+
+.w20 {
+  width: 20em;
+}
+
+.w25 {
+  width: 25em;
+}
+
+.c-red {
+  background-color: #ffb0aa;
+}
+
+// table CSS
+
+table {
+  border: 1px solid lightgray;
+  background-color: #4c4c4c;
+
+  th {
+    background-color: black;
+    border: 1px solid lightgray;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+  td {
+    background-color: #4c4c4c;
+    border: 1px solid lightgray;
+    padding-left: 4px;
+    padding-right: 4px;
+  }
+
+}
+
