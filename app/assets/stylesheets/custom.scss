@@ -93,6 +93,8 @@ button, input[type="submit"], input[type="button"] {
   border: 3px lightgray outset;
   background-color: #bfbfbf;
   text-align: center;
+  color: black;
+  margin-right: 8px;
 }
 
 .button {
@@ -103,12 +105,14 @@ button, input[type="submit"], input[type="button"] {
   color: black;
   text-align: center;
   font-size: small;
-  padding-top: 0px;
-  padding-bottom: 2px;
+  padding-top: 2px;
+  padding-bottom: 3px;
+  margin-right: 8px;
 }
 
 .button:active, button:active, input[type="submit"]:active, input[type="button"]:active {
   border: 3px lightgray inset;
+  margin-right: 8px;
 }
 
 #notice {
@@ -118,6 +122,10 @@ button, input[type="submit"], input[type="button"] {
 input[type="text"]:invalid, input[type="password"]:invalid, input[action="text"]:invalid, input[type="email"]:invalid, textarea:invalid {
   color: white;
   background-color: red;
+}
+
+input {
+  color: black;
 }
 
 :required {
@@ -199,5 +207,29 @@ table {
     padding-right: 4px;
   }
 
+  .button {
+    display: block;
+    text-decoration: none;
+    border: 3px lightgray outset;
+    background-color: #bfbfbf;
+    color: black;
+    text-align: center;
+    font-size: small;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    margin-top: 1px;
+    margin-bottom: 1px;
+    margin-right: 0px;
+  }
 }
 
+.across {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+
+footer {
+  clear: both;
+}
