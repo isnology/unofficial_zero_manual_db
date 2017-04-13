@@ -70,7 +70,7 @@ header-x {
     border-color: #fdffdb;
   }
 
-  .alert-danger {
+  .alert-danger, .alert-alert {
     color: #7a1004;
     background-color: #ffb0aa;
     border-color: #ffb0aa;
@@ -82,7 +82,7 @@ header-x {
     border-color: #c9fcd7;
   }
 
-  .alert-info, .alert-notice, .alert-alert {
+  .alert-info, .alert-notice {
     color: blue;
     background-color: #d3eaff;
     border-color: #d3eaff;
